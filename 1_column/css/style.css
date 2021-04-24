@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earyaccess/notosansjapanese.css);
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.container{
+  max-width: 1080px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header > .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 103px;
+}
+
+/* ロゴ */
+.area_logo_head .logo {
+  display: flex;
+  align-items: center;
+}
+.area_logo_head img{
+  height: 42.29px;
+  vertical-align: bottom;
+}
+.area_logo_head p{
+  font-size: 31px;
+  font-weight: bold;
+  margin-left: 10.9px;
+}
+
+/* ヘッダーナビ */
+.nav_header {
+  margin: 0 0 0 auto;
+}
+.list_nav_header{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0 -27.8px;
+}
+.list_nav_header > li {
+  padding: 0 27.8px;
+}
+.list_nav_header a {
+  color: #000;
+  font: bold 16px/1em 'Arial',sans-serif;
+}
+.btn{
+  font: bold 16px/1em 'Arial',sans-serif;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0px 18.5px;
+  background: #fff;
+  border: #000 solid 2px;
+  border-radius: 4px;
+}
+.btn:hover{
+  background: #000;
+  color: #fff;
+}
+
+/* トップビュー */
+.area_top_view {
+  background: url(../images/bg/bg_view.jpg) no-repeat bottom center;
+  background-size: cover;
+  margin-top: 100px;
+}
+.area_top_view > .container{
+  height: 750px;
+}
+.area_top_view .ttl{
+  color: #fff;
+  font: bold 68px/1em 'Arial',sans-serif;
+  letter-spacing: 0.035em;
+  text-align: center;
+  position: absolute;
+  top: 572px;
+  left: 61px;
+}
+
+/* エリア_シングル */
+[class*="area"][class*="single"]{
+  margin-top: 93.3px;
+}
+
+/* ヘッド */
+.head_single{
+  text-align: center;
+  width: 300px;
+  height: 80px;
+  display: inline-block;
+  position: relative;
+  top: 25.5px;
+}
+.head_single .ttl{
+  font: bold 33px/1em 'Arial',sans-serif;
+  width: 100%
+  height: 50%;
+}
+.head_single .subttl {
+  font: 20px/1em 'Arial',sans-serif;
+  width: 100%;
+  height: 50%;
+}
+
+/* 2分割レイアウト */
+.layout_2_div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -108.5px;
+}
+.layout_2_div > div {
+  width: 50%
+  padding: 0 108.5px;
+}
+
+/* テキスト_シングル */
+.text_single .ttl {
+  font: bold 31px/1em 'Arial',sans-serif;
+  margin-bottom: 53px;
+}
+.text_single .description {
+  font: 31px/1em 'Arial',sans-serif;
+}
+
+/* 項目１ */
+.area_1_single .scroll {
+  width: 690px;
+  height: 355px;
+  border: #000 solid 1px;
+  overflow: scroll;
+  position: relative;
+  top: 25.5px;
+  left: 515px;
+}
