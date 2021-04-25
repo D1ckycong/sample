@@ -36,8 +36,7 @@ header > .container {
   vertical-align: bottom;
 }
 .area_logo_head p{
-  font-size: 31px;
-  font-weight: bold;
+  font: bold 31px/1em 'Arial',sans-serif;
   margin-left: 10.9px;
 }
 
