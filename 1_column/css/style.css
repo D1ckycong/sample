@@ -37,7 +37,7 @@ header > .container {
 }
 .area_logo_head p{
   display: inline-block;
-  font: bold 31px/1em 'Arial',sans-serif;
+  font: bold 31px/1em 'Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
   margin-left: 10.9px;
 }
 
