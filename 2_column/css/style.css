@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earyaccess/notosansjapanese.css);
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.container {
+  max-width: 980px;
+  padding: 0;
+  margin: 0;
+}
+
+/* ヘッダー */
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 2
+}
+header > .container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 30px;
+}
+
+/* ロゴ アイコン */
+.area_logo_header {
+  height: 40px;
+  display: block;
+  position: relative;
+  left: 30px;
+}
+.area_logo_header img {
+  height: 40px;
+}
+.area_ico_search {
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  right: 30px;
+}
+header .container > a {
+  width: 0;
+  height: 0;
+}
+.area_ico_search img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+/* サイドとメイン */
+main {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/* サイドバー */
+.side-wrapper {
+  background-color: #fff;
+  display: inline-block;
+  width: 270px;
+  position: fixed;
+  z-index: 1
+}
+
+
+/* メインコンテンツ */
+.main-wrapper {
+  position: absolute;
+  left: 270px;
+  z-index: 0;
+}
