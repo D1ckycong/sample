@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ico_search" transform="translate(-674 -393)">
+    <rect id="長方形_37" data-name="長方形 37" width="40" height="40" rx="10" transform="translate(674 393)" fill="none"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(679 398)">
+      <g id="search">
+        <rect id="長方形_36" data-name="長方形 36" width="30" height="30" opacity="0"/>
+        <path id="パス_232" data-name="パス 232" d="M26.611,24.718,22.078,20.2a10.559,10.559,0,0,0,2.253-6.533A10.666,10.666,0,1,0,13.666,24.332,10.559,10.559,0,0,0,20.2,22.078l4.52,4.533a1.339,1.339,0,1,0,1.893-1.893ZM5.666,13.666a8,8,0,1,1,8,8,8,8,0,0,1-8-8Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
