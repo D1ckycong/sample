@@ -65,15 +65,309 @@ main {
 .side-wrapper {
   background-color: #fff;
   display: inline-block;
-  width: 270px;
+  width: 20%;
   position: fixed;
   z-index: 1
 }
+.list_nav_side > li {
 
+}
+.list_nav_side a {
+  color: #000;
+  font: bold 25px/1em 'futura PT', Arial,sans-serif;
+}
+.list_nav_side a:hover {
+  background-color: #E9E8E6;
+}
+[class*="ico_side"] {
+  color: #000;
+  font: 500 25px/1em 'futura PT', Arial,sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 25px 90px;
+  background: #fff;
+  position: relative;
+}
+[class*="ico_side"]:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+[class*="ico_side"][class*="home"]:before {
+  background: url(../images/ico/ico_menu_home.svg);
+}
+[class*="ico_side"][class*="trending"]:before {
+  background: url(../images/ico/ico_menu_trending.svg);
+}
+[class*="ico_side"][class*="announce"]:before {
+  background: url(../images/ico/ico_menu_announce.svg);
+}
+[class*="ico_side"][class*="history"]:before {
+  background: url(../images/ico/ico_menu_history.svg);
+}
+[class*="ico_side"][class*="home"]:before {
+  background: url(../images/ico/ico_menu_home.svg);
+}
+[class*="ico_side"][class*="likes"]:before {
+  background: url(../images/ico/ico_menu_likes.svg);
+}
+[class*="ico_side"][class*="account"]:before {
+  background: url(../images/ico/ico_menu_account.svg);
+}
+[class*="ico_side"][class*="setting"]:before {
+  background: url(../images/ico/ico_menu_setting.svg);
+}
+[class*="ico_side"][class*="help"]:before {
+  background: url(../images/ico/ico_menu_help.svg);
+}
+
+/* snsリスト */
+.side_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.list_sns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -7px;
+}
+.list_sns > li {
+  padding: 0 7px;
+  list-style: none;
+}
+.list_sns a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+}
+.list_sns a:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.list_sns .twitter a:before {
+  background: url(../images/ico/ico_sns_twitter.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.list_sns .github a:before {
+  background: url(../images/ico/ico_sns_github.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.list_sns .tumbler a:before {
+  background: url(../images/ico/ico_sns_tumbler.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.copyright {
+  font: 300 15px/1em 'futura PT',Arial,sans-serif;
+  margin: 5px 0 0;
+}
 
 /* メインコンテンツ */
 .main-wrapper {
+  width: 80%;
+  margin-left: 20%;
+  background-color: #E9E8E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head_home {
+  margin: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head_home .ttl{
+  font: bold 40px 'futura PT',Arial,sans-serif;
+  position: relative;
+}
+.head_home .ttl:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: #fff;
   position: absolute;
-  left: 270px;
-  z-index: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* トップビュー */
+.area_top_view {
+  height: 600px;
+}
+.area_top_view .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area_top_view img {
+  width: 595px;
+  height: 600px;
+}
+.area_top_view p {
+  font: 600 36px/1em 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+/* 新着情報 */
+.area_home_newitem {
+  width: 1100px;
+  height: 570px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.area_home_newitem .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.area_home_newitem .body_home {
+  padding: 0 -20px;
+}
+.layout_3_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area_home_newitem img {
+  width: 300px;
+  height: 440px;
+  margin: 0 20px;
+}
+
+/* 髭コラム */
+.area_home_column {
+  width: 1100px;
+  height: 580px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.area_home_column .body_home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.layout_scroll {
+  background-color: #fff;
+  width: 980px;
+  height: 450px;
+  border: #000 solid 1px;
+  overflow: scroll;
+}
+.layout_scroll li {
+  padding: 20px 0px 20px 20px;
+  display: flex;
+  align-items: center;
+}
+.layout_scroll img {
+  width: 300px;
+  height: 162px;
+}
+.layout_scroll .scroll_text {
+  padding-left: 35px;
+}
+.layout_scroll .date {
+  font: italic normal 15px 'futura PT', Arial ,sans-serif;
+}
+.layout_scroll .title {
+  font: normal 20px 'futura PT', Arial ,sans-serif;
+}
+
+/* 自己紹介 */
+.area_home_profile {
+  width: 1100px;
+  height: 625px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.area_home_profile .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.layout_2_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_2_div img {
+  width: 450px;
+  height: 490px;
+}
+.layout_2_div .text {
+  margin-left: 35px;
+}
+.layout_2_div .title {
+  font: bold 31px 'futura PT', Arial ,sans-serif;
+}
+.layout_2_div p {
+  font: normal 31px 'futura PT', Arial ,sans-serif;
+  padding-top: 25px;
+}
+
+/* フッター */
+footer {
+  margin-top: 70px;
+  height: 280px;
+  width: 100%;
+  background-color: #585858;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .container h2 {
+  font: 200 40px/1em 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  color: #fff;
+}
+footer .container p {
+  margin-top: 35px;
+  font: normal 14px 'futura PT', Arial ,sans-serif;
+  color: #fff;
 }
